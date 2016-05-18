@@ -6,11 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Angular Application</title>
 </head>
-<body>
+<body class="app" ng-app="app">
 
+  <div ng-controller="MainController">
     <script src="js/angular.js"></script>
     <script src="js/app/app.js"></script>
     <script src="js/app/controllers/MainController.js"></script>
 
+    <h1>{{ person.name }}</h1>
+    <p>{{ person.email }}</p>
+    <p>{{ person.phone }}</p>
+  </div>
 </body>
 </html>
